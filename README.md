@@ -12,9 +12,22 @@ library(leaflet.extras)
 library(data.table)
 library(sp)
 
+
+
+
+
+
+
+
+
+
+
+
 data1 = read_csv(enterCSV1here)
+  
   data2 = read_csv(entrCSV2here)
-    Spatial_Data = SpatialPointsDataFrame(data2[,c( "Longitude", "Latitude")],data2)
+ 
+Spatial_Data = SpatialPointsDataFrame(data2[,c( "Longitude", "Latitude")],data2)
     
     ui <- fluidPage(
     
