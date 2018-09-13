@@ -1,5 +1,9 @@
 # Geolocation-Tool
 Enter a CSV with addresses and their corresponding longitudes and latitudes to visualize their location on a map. Once mapped, one is allowed to select certain data points within a radius and those entries from the CSV will be rendered in a data table below. It will show all information included in the CSV. 
+Original design is for proximity visuaization. If you only want to use 1 data set, omit the CSV2 option.
+
+
+
 library(shiny)
 library(readr)
 library(leaflet)
@@ -8,10 +12,8 @@ library(leaflet.extras)
 library(data.table)
 library(sp)
 
-####Original design is for proximity visuaization. If you only want to use 1 data set, omit the CSV2 option.
-
-data1 = read_csv(###enterCSV1 here)
-  data2 = read_csv(###entrCSV2 here)
+data1 = read_csv(enterCSV1here)
+  data2 = read_csv(entrCSV2here)
     Spatial_Data = SpatialPointsDataFrame(data2[,c( "Longitude", "Latitude")],data2)
     
     ui <- fluidPage(
