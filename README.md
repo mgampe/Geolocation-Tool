@@ -1,5 +1,5 @@
 # Geolocation-Tool
-##Enter a CSV with addresses and their corresponding longitudes and latitudes to visualize their location on a map. Once mapped, one is ##allowed to select certain data points within a radius and those entries from the CSV will be rendered in a data table below. It will ##show all information included in the CSV. 
+Enter a CSV with addresses and their corresponding longitudes and latitudes to visualize their location on a map. Once mapped, one is allowed to select certain data points within a radius and those entries from the CSV will be rendered in a data table below. It will show all information included in the CSV. 
 library(shiny)
 library(readr)
 library(leaflet)
